@@ -37,7 +37,11 @@ def update(token , boardposition)
     @cells
 end
 
-
+def full?
+    @cells.each do |element|
+      if element == " "
+    end
+end
 end
 #puts "#{@cell[0]}  | #{@cell[1]}  | #{@cell[2]}"
 #puts "#{@cell[3]}  | #{@cell[4]}  | #{@cell[5]}"
