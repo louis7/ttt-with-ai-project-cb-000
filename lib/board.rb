@@ -38,12 +38,17 @@ def update(token , boardposition)
 end
 
 def full?
+  ## got to find an easier / shorter way to find out if an array is full
+bucket = 0
     @cells.each do |element|
       if element == " "
-        return false
-      else
-        return true
+        bucket= 1
       end
+    end
+    if bucket == 1
+      return false
+    else
+    return true
     end
 end
 
