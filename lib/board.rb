@@ -32,10 +32,9 @@ def position(input_position)
 end
 
 
-def update(token , boardposition)
-    @cells[boardposition] = token
-    @cells
-end
+  def update(input, player)
+    cells[input.to_i-1] = player.token
+  end
 
 def full?
   ## got to find an easier / shorter way to find out if an array is full
@@ -73,6 +72,3 @@ end
 
 
 end
-#puts "#{@cell[0]}  | #{@cell[1]}  | #{@cell[2]}"
-#puts "#{@cell[3]}  | #{@cell[4]}  | #{@cell[5]}"
-#puts "#{@cell[6]}  | #{@cell[7]}  | #{@cell[8]}"
