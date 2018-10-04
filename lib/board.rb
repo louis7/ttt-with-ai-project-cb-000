@@ -21,9 +21,9 @@ def reset!
 end
 
 def position(input_position)
-    if input_position == "1"
+    if input_position == 1
         @position = "O"
-    elsif input_position =="2"
+    elsif input_position ==2
         @position = " "
     else
         @position = "X"
