@@ -20,17 +20,9 @@ def reset!
     @cells = [" "," "," "," "," "," "," "," "," "]
 end
 
-def position(input_position)
-    if input_position == 1
-        @position = "O"
-    elsif input_position ==2
-        @position = " "
-    else
-        @position = "X"
-    end
-    @position
-end
-
+  def position(input)
+    cells[input.to_i-1]
+  end
 
   def update(input, player)
     cells[input.to_i-1] = player.token
