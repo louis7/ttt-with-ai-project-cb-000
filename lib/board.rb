@@ -40,6 +40,9 @@ end
 def full?
     @cells.each do |element|
       if element == " "
+        return false
+      else
+        return true 
     end
 end
 end
