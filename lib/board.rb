@@ -70,7 +70,7 @@ end
     end
   end
 
-end
+
 
 end
 #puts "#{@cell[0]}  | #{@cell[1]}  | #{@cell[2]}"
