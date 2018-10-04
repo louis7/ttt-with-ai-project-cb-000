@@ -53,9 +53,32 @@ bucket = 0
 end
 
 
+def taken?
+    @cells.each do |element|
+    if element == "X" || element == "O"
+    return true
+end
 
 
 
+
+  def taken?(space)
+    cell = space.to_i
+    if @cells[cell-1] == "X" || @cells[cell-1] == "O"
+      return true
+    else @cells[cell-1] == nil || @cells[cell-1] == " "
+      return false
+    end
+  end
+
+  def valid_move?(input)
+    position = input.to_i
+    if position.between?(1, 9) && !taken?(position)
+      return true
+    end
+  end
+
+end
 
 end
 #puts "#{@cell[0]}  | #{@cell[1]}  | #{@cell[2]}"
