@@ -53,14 +53,6 @@ bucket = 0
 end
 
 
-def taken?
-    @cells.each do |element|
-    if element == "X" || element == "O"
-    return true
-end
-
-
-
 
   def taken?(space)
     cell = space.to_i
